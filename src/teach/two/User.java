@@ -7,6 +7,7 @@ public class User {
     public static String[] arr1 = new String[3];
     public static String[] arr2 = new String[3];
     static int index = 0;
+
     public static void main(String[] args) {
         arr1[0] = "heima";
         arr2[0] = "123456";
@@ -29,6 +30,7 @@ public class User {
             }
         }
     }
+
     /*
      * 登录功能，键盘输入用户名与密码
      * 使用for循环加if判断验证输入的用户名与密码是否正确
@@ -50,6 +52,7 @@ public class User {
             System.out.println("登录失败，请重新输入！");
         }
     }
+
     /*
      * 注册功能，键盘输入用户名与密码
      * 定义一个boolean变量，使用for循序判断用户是否存在
@@ -85,6 +88,7 @@ public class User {
             }
         }
     }
+
     /*
      * 查看功能
      * 使用for循环打印两个数组的长度
@@ -93,10 +97,11 @@ public class User {
         for (int i = 0; i < arr1.length; i++) {
             if (arr1[i] != null) {
                 System.out.println("用户名：" + arr1[i] + "," + "密码："
-                        + arr2[i]+ "\n");
+                        + arr2[i] + "\n");
             }
         }
     }
+
     /*
      * 增加数组长度
      * 先定义两个新的数组并在原有的数组长度上加3
@@ -112,6 +117,7 @@ public class User {
         arr2 = newarray2;
         show();
     }
+
     /*
      * 可操作功能的显示
      */

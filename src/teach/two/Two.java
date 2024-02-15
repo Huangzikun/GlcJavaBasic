@@ -20,7 +20,7 @@ public class Two {
 
         short s = 3;
         int i = 5;
-        s += i;	//强制类型转换自动完成
+        s += i;    //强制类型转换自动完成
         System.out.println("s = " + s);
 
 //        String str1 = "a";
@@ -28,9 +28,6 @@ public class Two {
 //        String str3 = "ab";
 //        String str4 = str1 + str2;
 //        System.out.println(str3 == str4);
-
-
-
 
 
 //        String str1 = "a";
