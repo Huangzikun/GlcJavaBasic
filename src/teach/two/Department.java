@@ -8,9 +8,7 @@ public class Department {
          * 根据用户输入的信息确定员工应分配到那个部门。
          */
         Scanner sc = new Scanner(System.in);
-        System.out.println("请输入新员工的姓名：");
         String name = sc.next();
-        System.out.println("请输入新员工应聘的语言：");
         String language = sc.next();
         switch (language) {
             case "Java":
@@ -29,8 +27,11 @@ public class Department {
                 System.out.println(name + "被分配到前端程序开发部门");
                 break;
             default:
-                System.out.println("抱歉，本公司不需要" + language + "语言的人。");
+                System.out.println("抱歉，本公司不需要" + language + "语言的人");
                 break;
         }
+        System.out.flush();
+
+        return ;
     }
 }

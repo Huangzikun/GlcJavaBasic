@@ -15,16 +15,10 @@ public class Supermarket {
         double banana = 15.5;       //香蕉价格
         int i = 0;
         String a = "Y";
-        System.out.println("-------------黑马小商城-------------");
-        System.out.println("1.牙刷的价格为：" + toothbrush + "元");
-        System.out.println("2.毛巾的价格为：" + towel + "元");
-        System.out.println("3.水杯的价格为：" + cup + "元");
-        System.out.println("4.苹果的价格为：" + apple + "元");
-        System.out.println("5.香蕉的价格为：" + banana + "元");
         while (a.equals("Y")) {
             Scanner sc1 = new Scanner(System.in);
-            System.out.println("请输入你需要购买商品的序列号：");
-            i = sc1.nextInt();
+            System.out.println("请输入你需要购买商品的序列号:");
+            i = Integer.parseInt(sc1.nextLine());
             switch (i) {
                 case 1:
                     System.out.println("请输入你需要购买牙刷的数量:");
@@ -32,7 +26,7 @@ public class Supermarket {
                     double toothbrushnnum = toothbrushnnumber * toothbrush;
                     System.out.println("你购买了牙刷" + toothbrushnnumber + "支，需要花费" + toothbrushnnum + "元");
                     System.out.println("需要继续购买请输入Y，否则输入N");
-                    a = sc1.next();
+                    a = sc1.nextLine();
                     break;
                 case 2:
                     System.out.println("请输入你需要购买毛巾的数量:");
@@ -40,7 +34,7 @@ public class Supermarket {
                     double towelnum = towelnumber * towel;
                     System.out.println("你购买了毛巾" + towelnumber + "个，需要花费" + towelnum + "元");
                     System.out.println("需要继续购买请输入Y，否则输入N");
-                    a = sc1.next();
+                    a = sc1.nextLine();
                     break;
                 case 3:
                     System.out.println("请输入你需要购买水杯的数量:");
@@ -48,7 +42,7 @@ public class Supermarket {
                     double cupnum = cupnumber * cup;
                     System.out.println("你购买了水杯" + cupnumber + "个，需要花费" + cupnum + "元");
                     System.out.println("需要继续购买请输入Y，否则输入N");
-                    a = sc1.next();
+                    a = sc1.nextLine();
                     break;
                 case 4:
                     System.out.println("请输入你需要购买苹果的数量:");
@@ -56,7 +50,7 @@ public class Supermarket {
                     double applenum = applenumber * apple;
                     System.out.println("你购买了苹果" + applenumber + "斤，需要花费" + applenum + "元");
                     System.out.println("需要继续购买请输入Y，否则输入N");
-                    a = sc1.next();
+                    a = sc1.nextLine();
                     break;
                 case 5:
                     System.out.println("请输入你需要购买香蕉的数量:");
@@ -64,10 +58,14 @@ public class Supermarket {
                     double banananum = banananumber * banana;
                     System.out.println("你购买了香蕉" + banananumber + "斤，需要花费" + banananum + "元");
                     System.out.println("需要继续购买请输入Y，否则输入N");
-                    a = sc1.next();
+                    a = sc1.nextLine();
                     break;
             }
+
+            System.out.flush();
         }
-        System.out.println("期待您的下次光临！");
+
+        return ;
+
     }
 }

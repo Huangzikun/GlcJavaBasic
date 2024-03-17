@@ -1,7 +1,21 @@
 package teach.two;
 
+import java.util.ArrayList;
+
 public class Two {
+
     public static void main(String[] args) {
+
+        int xx = 0;
+        int i1 = ~xx;
+        System.out.println(i1);
+
+
+        double num1 = 0.1;
+        double num2 = 0.2;
+        double result = num1 + num2;
+        System.out.println(result);
+
 
         long x = 10;
         System.out.println(x);
