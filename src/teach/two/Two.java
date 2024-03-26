@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Two {
 
     public static void main(String[] args) {
-
+        /**
         int xx = 0;
         int i1 = ~xx;
         System.out.println(i1);
@@ -36,12 +36,14 @@ public class Two {
         int i = 5;
         s += i;    //强制类型转换自动完成
         System.out.println("s = " + s);
+         **/
 
-//        String str1 = "a";
-//        String str2 = "b";
-//        String str3 = "ab";
-//        String str4 = str1 + str2;
-//        System.out.println(str3 == str4);
+
+        String str1 = "a";
+        String str2 = "b";
+        String str3 = "ab";
+        String str4 = str1 + str2;
+        System.out.println(str3.equals(str4));
 
 
 //        String str1 = "a";

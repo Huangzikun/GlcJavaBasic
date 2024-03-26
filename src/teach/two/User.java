@@ -9,12 +9,9 @@ public class User {
     static int index = 0;
 
     public static void main(String[] args) {
-        arr1[0] = "heima";
-        arr2[0] = "123456";
         while (true) {
-            print();
+            //print();
             Scanner scan = new Scanner(System.in);
-            System.out.println("请选择功能：");
             String str = scan.next();
             if (str.equals("1")) {
                 login();
@@ -22,13 +19,15 @@ public class User {
                 register();
             } else if (str.equals("3")) {
                 show();                         //用户退出
+            } else if (str.equals("0") || str.equals("4")) {
+                System.out.println("退出");
                 break;
-            } else if (str.equals("0")) {
-                System.exit(0);
             } else {
                 System.out.println("输入错误");
             }
         }
+
+        System.out.flush();
     }
 
     /*
@@ -38,18 +37,18 @@ public class User {
     public static void login() {
         for (int i = 0; i < 3; i++) {
             Scanner scan1 = new Scanner(System.in);
-            System.out.println("请输入用户名：");
+            System.out.println("请输入用户名:");
             String str1 = scan1.next();
             Scanner scan2 = new Scanner(System.in);
-            System.out.println("请输入密码：");
+            System.out.println("请输入密码:");
             String str2 = scan2.next();
             for (int i1 = 0; i1 < arr2.length; i1++) {
                 if (str1.equals(arr1[i1]) && str2.equals(arr2[i1])) {
-                    System.out.println("登录成功！");
+                    System.out.println("登录成功!");
                     return;
                 }
             }
-            System.out.println("登录失败，请重新输入！");
+            System.out.println("登录失败,请重新输入!");
         }
     }
 
@@ -62,15 +61,15 @@ public class User {
      */
     public static void register() {
         Scanner scan1 = new Scanner(System.in);
-        System.out.println("请输入用户名：");
+        System.out.println("请输入用户名:");
         String str1 = scan1.next();
         Scanner scan2 = new Scanner(System.in);
-        System.out.println("请输入密码：");
+        System.out.println("请输入密码:");
         String str2 = scan2.next();
         boolean flag = true;
         for (int i = 0; i < arr1.length; i++) {
             if (str1.equals(arr1[i])) {
-                System.out.println("用户名已存在");
+                System.out.println("用户名已存在!");
                 flag = false;
             }
         }
@@ -79,12 +78,12 @@ public class User {
             if (index < arr1.length) {
                 arr1[index] = str1;
                 arr2[index] = str2;
-                System.out.println("注册成功！");
+                System.out.println("注册成功!");
             } else {
                 add();
                 arr1[index] = str1;
                 arr2[index] = str2;
-                System.out.println("注册成功！");
+                System.out.println("注册成功!");
             }
         }
     }
@@ -96,8 +95,8 @@ public class User {
     public static void show() {
         for (int i = 0; i < arr1.length; i++) {
             if (arr1[i] != null) {
-                System.out.println("用户名：" + arr1[i] + "," + "密码："
-                        + arr2[i] + "\n");
+                System.out.println("用户名:" + arr1[i] + "," + "密码:"
+                        + arr2[i]);
             }
         }
     }
