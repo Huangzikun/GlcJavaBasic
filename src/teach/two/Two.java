@@ -45,7 +45,6 @@ public class Two {
         String str4 = str1 + str2;
         System.out.println(str3.equals(str4));
 
-
 //        String str1 = "a";
 //        String str2 = "b";
 //        String str3 = "ab";
@@ -62,6 +61,7 @@ public class Two {
 //        String str3 = "ab";
 //        String str4 = str1 + str2;
 //        System.out.println(str3 == str4);
+
     }
 
 }

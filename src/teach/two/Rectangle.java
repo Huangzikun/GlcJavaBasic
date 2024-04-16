@@ -11,9 +11,9 @@ public class Rectangle {
         int width = 5;
         System.out.println("The area is: " + getArea(height, width));
 
-        String sHeight = "3";
-        String sWidth = "5";
-        System.out.println("The area is: " + getArea(sHeight, sWidth));
+        double dHeight = 3.1;
+        double dWidth = 5d;
+        System.out.println("The area is: " + getArea(dHeight, dWidth));
 
 
         Height heightClass = new Height();
@@ -23,7 +23,7 @@ public class Rectangle {
         widthClass.setWidth(5);
         System.out.println("The area is: " + getArea(heightClass, widthClass));
 
-        System.out.println(heightClass.getHeight());
+        //System.out.println(heightClass.getHeight());
     }
 
     public static void printRectangle(int height, int width) {
@@ -43,8 +43,17 @@ public class Rectangle {
         return temp;
     }
 
+    public static double getArea(double height, double width) {
+        double temp = height*width;
+        height = 3.3;
+
+        return temp;
+    }
+
     public static int getArea(String height, String width) {
         int temp = Integer.parseInt(height)*Integer.parseInt(width);
+        height = "20";
+
         return temp;
     }
 

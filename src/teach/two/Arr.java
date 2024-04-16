@@ -3,6 +3,9 @@ package teach.two;
 public class Arr {
 
     public static void main(String[] args) {
+
+
+
         int i1 = 1;
         int i2 = 2;
         int i3 = 3;
@@ -28,9 +31,39 @@ public class Arr {
         //iArr = new int[10];
         //System.out.println(iArr[11]);
 
-        for(int i=0; i<iArr.length; i++) {
-            System.out.println(iArr[i]);
+//        for(int i=0; i<iArr.length; i++) {
+//            System.out.println(iArr[i]);
+//        }
+
+//        for (int x : iArr) {
+//            System.out.println(x);
+//        }
+//        System.out.println();
+
+        int[] numbers = {1,2,3};
+        int n = numbers[0];
+        numbers[0] = 4;
+        System.out.println(n); // n是2还是4?
+        System.out.println(numbers);
+        modifyArray(numbers);
+        System.out.println(numbers[0]);
+
+        for(int i=0; i<numbers.length; i++) {
+            System.out.println(numbers[i]);
         }
-        System.out.println("");
+
+        String[] names = {"ABC", "XYZ", "zoo"};
+        String s = names[1];
+        names[1] = "cat";
+        System.out.println(s); // s是"XYZ"还是"cat"?
+    }
+
+    public static void modifyArray(int[] arr) {
+        System.out.println(arr);
+        arr[0] = 10; // 修改数组元素
+
+        arr = new int[10];
+        System.out.println(arr);
+
     }
 }
