@@ -12,11 +12,6 @@ public class Shopping {
         int cola = 3;     //可乐价格
         int book = 12;    //书本价格
         int snacks = 5;   //零食价格
-        System.out.println("书本的价格为" + book + "元，您总共有20元");
-        System.out.println("1.铅笔的价格为：" + pencil + "元");
-        System.out.println("2.橡皮的价格为：" + rubber + "元");
-        System.out.println("3.可乐的价格为：" + cola + "元");
-        System.out.println("4.零食的价格为：" + snacks + "元");
         Scanner sc1 = new Scanner(System.in);
         System.out.println("请输入其他需要购买商品的序列号：");
         int id = sc1.nextInt();
